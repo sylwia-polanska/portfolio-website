@@ -1,0 +1,65 @@
+#container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    width: 50%;
+    padding: 10px 10px 20px;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid grey;
+    -webkit-box-shadow: 6px 7px 29px -5px rgba(66, 68, 90, 0.42);
+    -moz-box-shadow: 6px 7px 29px -5px rgba(66, 68, 90, 0.42);
+    box-shadow: 6px 7px 29px -5px rgba(66, 68, 90, 0.42);;
+}
+
+ html, body { 
+  height: 100%; 
+  margin: 0; 
+  overflow: hidden;
+  overflow: clip; 
+  contain: content;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white; 
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.logoIcon{
+  width: 10%;
+  opacity: 0.7;
+  transition: 0.5s;
+  margin: 5px;
+}
+
+.logoIcon:hover{
+  opacity: 1.0;
+}
+
+#logoContainer{
+  margin-top: 4%;
+}
+
+#container p:first-of-type{
+  margin-top: 3%;
+  font-size: 150%;
+}
+
+
+
+@media only screen and (max-width: 419px) {
+  .logoIcon{
+    width: 18%;
+    margin: 1px;
+  }
+  #container{
+    width: 65%;
+  }
+}
